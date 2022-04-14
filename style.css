@@ -1,0 +1,101 @@
+@import url('https://fonts.google.com/specimen/Manrope');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+/*  */
+
+.main-container {
+    background-color: #202733;
+    height: 100vh;
+}
+.card-container {
+    width: 347px;
+    height: 343px;
+    margin: auto;
+    position: relative;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.card {
+    max-width: 100%;
+    min-height: 315px;
+    background-color: #313A48;
+    border-radius: 15px;
+    padding: 24px;
+    text-align: center;
+}
+.card .advice-count {
+    margin-top: 16px;
+    color: #53FFAA;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.card .advice-content {
+    font-size: 24px;
+    line-height: 32px;
+    color: #CEE3E9;
+    margin-bottom: 24px;
+    font-weight: 800;
+}
+.card .desktop-divider {
+    display: none;
+}
+.card-container .dice-div {
+    background-color: #53FFAA;
+    text-align: center;
+    min-height: 64px;
+    min-width: 64px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+/* TABLET AND DESKTOP */
+@media only screen and (min-width: 768px){
+    .card-container {
+        width: 540px;
+        height: 364px;
+    }
+    .card {
+        height: 332px;
+        padding: 32px;
+    }
+    .card .advice-count {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .card .advice-content{
+        margin-bottom: 40px;
+    }
+    .card .mobile-divider{
+        display: none;
+    }
+    .card .desktop-divider {
+        display: block;
+        width: 100%;
+    }
+    .card-container .dice-div:hover {
+        -webkit-box-shadow: 0px 0px 37px 9px rgba(83,255,170,0.36); 
+        box-shadow: 0px 0px 37px 9px rgba(83,255,170,0.36);
+        cursor: pointer;
+    }
+}
