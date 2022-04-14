@@ -20,7 +20,7 @@ adviceAPI.onreadystatechange = function() {
             //fill counter text with slip.id
             counter.textContent = `ADVICE # ${apiParse.slip.id}`;
             //fill quote text with slip.advice
-            quote.textContent = apiParse.slip.advice;
+            quote.textContent = `"${apiParse.slip.advice}"`;
         }
     }
 
